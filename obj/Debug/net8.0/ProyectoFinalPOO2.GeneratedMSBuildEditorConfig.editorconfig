@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProyectoFinalPOO2
+build_property.RootNamespace = ProyectoFinalPOO2
+build_property.ProjectDir = C:\Users\julia\Downloads\repo2\ProyectoPOO2(4)p\ProyectoPOO2\ProyectoFinalPOO2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\julia\Downloads\repo2\ProyectoPOO2(4)p\ProyectoPOO2\ProyectoFinalPOO2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/AsignarTarea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEFzaWduYXJUYXJlYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/EmpleadoEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEVtcGxlYWRvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/EmpleadoShowToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEVtcGxlYWRvU2hvd1RvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/JefesAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEplZmVzQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/JefesEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEplZmVzRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/JefeShowToDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEplZmVTaG93VG9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/JefesLis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXEplZmVzTGlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/ListaEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXExpc3RhRW1wbGVhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/MenuEnc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXE1lbnVFbmMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Encargado/RegEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jYXJnYWRvXFJlZ0VtcGxlYWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Home/Contacto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Home/CrearCuenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhckN1ZW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Home/IniciarSesion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaWFyU2VzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Home/Servicios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/julia/Downloads/repo2/ProyectoPOO2(4)p/ProyectoPOO2/ProyectoFinalPOO2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-srufzduffx

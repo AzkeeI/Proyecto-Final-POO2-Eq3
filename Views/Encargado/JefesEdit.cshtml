@@ -1,0 +1,41 @@
+@model JefeModel
+
+@{
+    ViewData["Title"] = "Editar jefe";
+    
+}
+
+<div class="container">
+    <div class="text-center mb-4">
+        <h1 class="display-4">Editar jefe</h1>
+    </div>
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <form asp-controller="Encargado" asp-action="JefesEdit" method="post">
+        <input asp-for="Id" type="hidden" />
+
+        <div class="mb-3">
+            <label asp-for="NombreJefe" class="form-label">Nombre del jefe</label>
+            <input asp-for="NombreJefe" class="form-control" />
+            <span asp-validation-for="NombreJefe" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Departamento" class="form-label">Departamento</label>
+            <input asp-for="Departamento" class="form-control" />
+            <span asp-validation-for="Departamento" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Sueldo" class="form-label">Sueldo</label>
+            <input asp-for="Sueldo" class="form-control" />
+            <span asp-validation-for="Sueldo" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-outline-primary me-2">Guardar</button>
+            <a asp-controller="Encargado" asp-action="MenuEnc" class="btn btn-outline-secondary">Regresar</a>
+        </div>
+    </form>
+</div>

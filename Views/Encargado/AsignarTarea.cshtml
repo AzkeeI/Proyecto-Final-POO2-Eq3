@@ -1,0 +1,223 @@
+@{
+    ViewData["Title"] = "Lista de Empleados";
+    Layout = null; // No especifica el layout para esta vista
+
+   
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar Tareas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #5D89B3;
+            height: 100vh; /* Ajustar para que ocupe toda la altura de la ventana */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .kanban-board {
+            display: flex;
+            gap: 20px;
+            flex-grow: 1;
+        }
+
+        .column {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: calc(80vh - 60px); /* Ajustar altura para que ocupe toda la pantalla */
+        }
+
+        .column-header {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .task {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .task-content {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .task-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task-actions button {
+            background-color: #007bff; /* Azul (primary) */
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .task-actions button:hover {
+            background-color: #0056b3; /* Azul más oscuro */
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            background-color: #007bff; /* Azul (primary) */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+         .header img {
+            width: 50px;
+            height: auto;
+        }
+
+        .buttons button:hover {
+            background-color: #0056b3; /* Azul más oscuro */
+        }
+    </style>
+</head>
+<body>
+ 
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="~/img/LogoLuxor.jpg" width="55" height="50">
+                <h1>Asignar Tareas</h1>
+            </div>
+            <div class="date">
+                26/05/2024 17:38:22
+            </div>
+        </div>
+
+        <div class="kanban-board">
+            <div class="column">
+                <div class="column-header">Por Hacer</div>
+                <div class="task">
+                    <div class="task-content">
+                        Realizar la página web
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-header">En Proceso</div>
+                <div class="task">
+                    <div class="task-content">
+                    </div>
+                    <div class="task-actions">
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-content">
+                    </div>
+                    <div class="task-actions">
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-header">Hecho</div>
+                <div class="task">
+                    <div class="task-content">
+                    </div>
+                    <div class="task-actions">
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-header">Aprobado</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button>Nueva Tarea</button>
+            <button>Bajar Tarea</button>
+            <button>Editar Tarea</button>
+        </div>
+    </div>
+</body>
+</html>

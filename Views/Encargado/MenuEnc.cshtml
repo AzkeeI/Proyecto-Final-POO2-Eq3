@@ -1,0 +1,219 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .sidebar {
+            width: 300px;
+            background-color: #2d3e50;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 999;
+        }
+
+        .sidebar img.profile-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .sidebar .info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sidebar .info h2 {
+            margin: 5px 0;
+        }
+
+        .sidebar .info h3 {
+            margin: 0;
+            font-weight: normal;
+            color: #8fa1b3;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .sidebar ul li {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #3b4a61;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            margin-top: 60px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alinear contenido arriba */
+            background-color: #f0f0f0;
+            padding: 20px;
+            overflow-y: auto; /* Permitir desplazamiento vertical */
+        }
+
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .power-button {
+            margin-top: auto;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+            background-color: #2d3e50;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .power-button:hover {
+            background-color: #3b4a61;
+        }
+
+        .logout {
+            margin-top: 20px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .dynamic-content {
+            width: 100%;
+            /* height: 100%; */ /* No es necesario definir altura aquí */
+            overflow-y: auto; /* Permitir desplazamiento vertical */
+            padding: 10px; /* Añadir padding opcional para separación */
+            min-height: calc(100vh - 130px); /* Altura mínima para ajustar a la altura de la ventana menos la altura de la barra de navegación y sidebar */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="~/img/cuñao.png" alt="login" class="img-fluid profile-img">
+        <div class="info">
+            <h2>Julian Macias Lara</h2>
+            <h3>Encargado</h3>
+            <p>26/05/2024 17:38:22</p>
+        </div>
+        <ul>
+            <li><a href="#" onclick="loadPage('Encargado/RegEmpleado')">Agregar usuario</a></li>
+            <li><a href="#" onclick="loadPage('Encargado/AsignarTarea')">Asignar Tareas</a></li>
+            <li><a href="#" onclick="loadPage('Encargado/ListaEmpleado')">Lista de Empleados</a></li>
+            <li><a href="#" onclick="loadPage('Encargado/JefesLis')">Lista de Jefes</a></li>
+        </ul>
+        <img src="~/img/salir.png" alt="logout" class="logout" onclick="confirmLogout()">
+    </div>
+
+    <div class="main-content">
+        <div class="dynamic-content" id="dynamic-content">
+            
+        </div>
+    </div>
+
+    <form id="logout-form" method="post" action="/Account/Logout" style="display:none;">
+        @Html.AntiForgeryToken()
+    </form>
+
+    <script>
+        function confirmLogout() {
+            if (confirm("¿Seguro que quieres cerrar sesión?")) {
+                window.location.href = "/Home/IniciarSesion";
+            }
+        }
+
+        function loadPage(page) {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', `/${page}`, true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    document.getElementById('dynamic-content').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.onerror = function () {
+                console.error("Error al cargar la página.");
+            };
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>

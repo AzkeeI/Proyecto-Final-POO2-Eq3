@@ -1,0 +1,208 @@
+@{
+    ViewData["Title"] = "Contacto";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            color: #000000; /* Color del texto */
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+
+        .navbar .logo {
+            float: left;
+            padding-right: 20px;
+        }
+
+        .navbar .menu {
+            float: right;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px); /* Ajusta la altura restando el tamaño del navbar */
+            margin-top: 20px; /* Reducido el margen superior */
+        }
+
+        .contact-section {
+            background-color: #5D89B3; /* Fondo azul */
+            color: #000; /* Color del texto */
+            min-height: calc(100vh - 70px); /* Asegura que cubra el 100% de la pantalla menos la altura del header */
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0; /* Asegura que no haya márgenes */
+            width: 100%;
+        }
+
+        .contact-info,
+        .contact-form {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 45%; /* Ajusta el ancho de las secciones */
+            text-align: left;
+        }
+
+        .contact-info {
+            margin-right: 30px; /* Espacio entre las secciones */
+        }
+
+        .contact-info h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-methods {
+            margin-top: 20px;
+        }
+
+        .contact-methods h2,
+        .contact-methods h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-methods ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-methods li {
+            margin-bottom: 5px;
+        }
+
+        .contact-methods a {
+            color: #007bff; /* Color azul para los enlaces */
+            text-decoration: none;
+        }
+
+        .contact-methods a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form form {
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0069d9;
+        }
+
+        media only screen and (max-width: 768px) {
+            .contact-info,
+            .contact-form {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .contact-info {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+
+    <div class="contact-section">
+        <div class="container">
+            <div class="contact-info">
+                <h1>Contacto</h1>
+                <p>Bienvenido a la sección de contacto. Por favor, si tienes algo que reportar, no dudes en contactarnos para solucionarlo a la brevedad.</p>
+                <div class="contact-methods">
+                    <h2>Utiliza las siguientes vías de contacto, o rellena el formulario.</h2>
+                    <h3>Vía E-mail</h3>
+                    <ul>
+                        <li><a href="mailto:al44546@un.edu.mx">al44546@un.edu.mx</a></li>
+                        <li><a href="mailto:al44546@un.edu.mx">al44720@un.edu.mx</a></li>
+                    </ul>
+                    <h3>En nuestras redes sociales</h3>
+                    <ul>
+                        <li><a href="#">Grupo ArsTechna</a></li>
+                    </ul>
+                    <h3>Por teléfono</h3>
+                    <ul>
+                        <li><a href="tel:+5212221234567">+52 8123081117</a></li>
+                        <li><a href="tel:+5212221234567">+52 8120267914</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Escribe tu nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Escribe tu email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Escribe tu teléfono (Opcional)</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Escribe tu mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
